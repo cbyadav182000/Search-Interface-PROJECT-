@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Interface</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="search-container">
+        <div class="dropdown">
+            <button class="dropbtn" onclick="toggleDropdown()" id="selected-category">Everything <span>▼</span></button>
+            <div class="dropdown-content" id="dropdownContent">
+                <a href="#" onclick="selectCategory('Everything')">Everything</a>
+                <a href="#" onclick="selectCategory('Software Development')">Software Development</a>
+                <a href="#" onclick="selectCategory('Web Development')">Web Development</a>
+                <a href="#" onclick="selectCategory('Data Analyst')">Data Analyst</a>
+                <a href="#" onclick="selectCategory('IT Consultant')">IT Consultant</a>
+                <a href="#" onclick="selectCategory('Network Administrator')">Network Administrator</a>
+            </div>
+        </div>
+        <input type="text" class="search-input" id="searchInput" placeholder="Search Anything">
+        <button class="search-button">🔍</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
